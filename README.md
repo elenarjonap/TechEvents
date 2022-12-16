@@ -1,7 +1,7 @@
 # Tech Events Manager Las notas - Abrazanos
 ***
 ## Project name: 
-Abrazanos
+Las notas - Abrazanos
 ***
 ## Project description:
 
