@@ -1,7 +1,13 @@
 @extends('layouts.app')
 
 @section('content')
-
+<div>
+    <button class="btn btn-primary">
+        <a href="{{ route('createAdoption') }}">
+            <div class="text-warning">CREAR NUEVA ADOPCIÓN</div>
+        </a>
+    </button>
+</div>
     <div class="d-flex flex-wrap row justify-content-center my-4 px-xxl-5">
         @foreach ($adoptions as $adoption)
             <div class="card" style="width: 18rem;">

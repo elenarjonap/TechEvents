@@ -43,5 +43,24 @@ class CRUDAdoptionTest extends TestCase
             $respone = $this->delete(route('deleteAdoption', $adoption->id));
             $this->assertCount(0, Adoption::all());
     }
-}
 
+    public function test_anAdoptionCanBeCreated(){
+            $this->withExceptionHandling();
+            $response = $this->post((route('storeAdoption')),
+            [
+                'name' => 'name',
+                'description' => 'description',
+                'spaces' => '80',
+                'img' => 'img',
+                'datetime' => '2022/12/24 18:00:00'
+            ]);
+
+            $this->assertCount(1, Adoption::all());
+
+    }
+
+    public function test_anAdoptionCanBeUpdated(){
+        $this->withExceptionHandling();
+
+    }
+}

@@ -28,7 +28,7 @@ class AdoptionController extends Controller
      */
     public function create()
     {
-        //
+        return view ('createAdoption');
     }
 
     /**
@@ -39,7 +39,9 @@ class AdoptionController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $adoption = request()->except('_token');
+        Adoption::create($adoption);
+        return redirect()->route('home');
     }
 
     /**
@@ -84,7 +86,6 @@ class AdoptionController extends Controller
      */
     public function destroy($id)
     {
-        //
         Adoption::destroy($id);
         return redirect()->route('home');
     }
