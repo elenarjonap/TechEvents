@@ -18,5 +18,6 @@ use App\Http\Controllers\AdoptionController;
 
 Auth::routes();
 
-Route::get('/',[AdoptionController::class, 'index']);
+Route::get('/',[AdoptionController::class, 'index'])->name('home');
 Route::get('/home',[AdoptionController::class, 'index']);
+Route::delete('/delete{id}', [AdoptionController::class, 'destroy'])->name('deleteAdoption');

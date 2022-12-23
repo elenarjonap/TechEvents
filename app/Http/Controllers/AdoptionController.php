@@ -85,5 +85,7 @@ class AdoptionController extends Controller
     public function destroy($id)
     {
         //
+        Adoption::destroy($id);
+        return redirect()->route('home');
     }
 }
