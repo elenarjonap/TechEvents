@@ -25,6 +25,9 @@
                             class="bt-adm m-1 d-flex justify-content-center align-items-center"
                             onclick="return confirm('¿Insistes en no adoptar? {{ $adoption->name }} - ID {{ $adoption->id }} ')">🗑️
                         </button>
+                        <a class="bt-adm m-1 d-flex justify-content-center align-items-center"
+                            href="{{ route('editAdoption', ['id' => $adoption->id]) }}">✏️</a>
+                        <a href="{{ route('showAdoption', ['id' => $adoption->id]) }}">👀</a>
                     </form>
                 </div>
                 

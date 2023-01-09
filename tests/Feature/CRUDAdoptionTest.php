@@ -62,5 +62,13 @@ class CRUDAdoptionTest extends TestCase
     public function test_anAdoptionCanBeUpdated(){
         $this->withExceptionHandling();
 
+        $adoption = Adoption::factory()->create();
+        $this->assertCount(1, Adoption::all());
+
+        $response = $this->patch(route('updateAdoption', $adoption->id), ['name' => 'New Name']);
+        $this->assertEquals('New Name', Adoption::first()->name);
+
+
+
     }
 }

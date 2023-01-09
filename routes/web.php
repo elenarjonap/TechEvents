@@ -23,10 +23,15 @@ Route::get('/',[AdoptionController::class, 'index'])->name('home');
 Route::get('/home',[AdoptionController::class, 'index']);
 
 // D del CRUD
-Route::delete('/delete{id}', [AdoptionController::class, 'destroy'])->name('deleteAdoption');
+Route::delete('/delete/{id}', [AdoptionController::class, 'destroy'])->name('deleteAdoption');
 
 // C del CRUD
 Route::get('/create', [AdoptionController::class, 'create'])->name('createAdoption');
 Route::post('/', [AdoptionController::class, 'store'])->name('storeAdoption');
 
 // U del CRUD
+Route::get('/edit/{id}', [AdoptionController::class, 'edit'])->name('editAdoption');
+Route::patch('/adoption/{id}', [AdoptionController::class, 'update'])->name('updateAdoption');
+
+//Show
+Route::get('/show/{id}', [AdoptionController::class. 'show'])->name('showAdoption');
