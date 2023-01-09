@@ -16,7 +16,7 @@
                     <h5 class="card-title">{{ $adoption->name }}</h5>
                     <h5 class="card-title">{{ $adoption->spaces }} Abrazos</h5>
                     <h5 class="card-title">{{ $adoption->datetime }}</h5>
-                    <p class="card-text">{{ $adoption->description }}</p>
+                    <!-- <p class="card-text">{{ $adoption->description }}</p> -->
                     <a href="#" class="btn btn-primary">Adoptar</a> 
                     <form action="{{ route('deleteAdoption', ['id' => $adoption->id]) }}" method="post">
                         @method('delete')
