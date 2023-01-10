@@ -31,7 +31,7 @@ class CRUDAdoptionTest extends TestCase
         $response->assertSee($adoption->name);
         $response->assertStatus(200)
                 ->assertViewIs('home');
-    }
+    }  
     public function test_anAdoptionCanBeDeleted(){
             $this->withExceptionHandling();
             $adoption = Adoption::factory()->create();
