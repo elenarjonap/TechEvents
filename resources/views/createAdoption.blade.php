@@ -5,7 +5,7 @@
 			<div class="col-md-8">
 				<div class="card">
 					<div class="card-body">
-						<h2 class="cardTitle">Crear nueva adopción</h2>
+						<h2 class="cardTitle d-flex flex-wrap row justify-content-center">Crear nueva adopción</h2>
 							<form class="justify-content-center" action="{{ route('storeAdoption') }}" method="post">
 								@csrf
 							<div class="input-group mb-3">
@@ -30,7 +30,7 @@
 								<input type="text" name="datetime" class="form-control subirFoto" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Fecha">
 							</div>
 							<div class="float-right">
-								<a class="btn btn-primary" href="{{ route('home') }}">↩</a>
+								<a class="btn btn-primary mb-3" href="{{ route('home') }}">↩</a>
 							</div>
 							<div class="btnCreate">
 								<button type="submit" class="btn btn-outline-success" value="Create">Crear</button>

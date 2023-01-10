@@ -34,4 +34,4 @@ Route::get('/edit/{id}', [AdoptionController::class, 'edit'])->name('editAdoptio
 Route::patch('/adoption/{id}', [AdoptionController::class, 'update'])->name('updateAdoption');
 
 //Show
-Route::get('/show/{id}', [AdoptionController::class. 'show'])->name('showAdoption');
+Route::get('/show/{id}', [AdoptionController::class, 'show'])->name('showAdoption');

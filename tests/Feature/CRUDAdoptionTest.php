@@ -58,4 +58,12 @@ class CRUDAdoptionTest extends TestCase
         $response = $this->patch(route('updateAdoption', $adoption->id), ['name' => 'New Name']);
         $this->assertEquals('New Name', Adoption::first()->name);
     }
+    public function test_anAdoptionCanBeShowed(){
+        $this->withExceptionHandling();
+        $adoption = Adoption::factory()->create();
+        $this->assertCount(1, Adoption::all());
+        $response = $this->get(route('showAdoption', $adoption->id));
+        $response->assertSee($adoption->name);
+        $response->assertStatus(200)->assertViewIs('showAdoption');
+    }
 }
