@@ -54,7 +54,6 @@ class AdoptionController extends Controller
     {
         //
         $adoption = Adoption::find($id);
-
         return view ('showAdoption', compact('adoption'));
     }
 
@@ -68,7 +67,6 @@ class AdoptionController extends Controller
     {
         //
         $adoption = Adoption::find($id);
-
         return view ('editAdoption', compact('adoption'));
     }
 
@@ -83,11 +81,8 @@ class AdoptionController extends Controller
     {
         //
         $adoption = request()->except('_token', '_method');
-
         Adoption::where('id', '=', $id)->update($adoption);
-
         return redirect()->route('home');
-
     }
 
     /**

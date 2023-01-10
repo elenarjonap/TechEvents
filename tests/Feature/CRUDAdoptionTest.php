@@ -27,23 +27,18 @@ class CRUDAdoptionTest extends TestCase
         $this->withExceptionHandling();
         $adoptions = Adoption::factory(5)->create();
         $adoption = $adoptions[0];
-
         $response = $this->get('/');
         $response->assertSee($adoption->name);
         $response->assertStatus(200)
                 ->assertViewIs('home');
     }
-
     public function test_anAdoptionCanBeDeleted(){
             $this->withExceptionHandling();
-
             $adoption = Adoption::factory()->create();
             $this->assertCount(1, Adoption::all());
-
             $respone = $this->delete(route('deleteAdoption', $adoption->id));
             $this->assertCount(0, Adoption::all());
     }
-
     public function test_anAdoptionCanBeCreated(){
             $this->withExceptionHandling();
             $response = $this->post((route('storeAdoption')),
@@ -54,21 +49,13 @@ class CRUDAdoptionTest extends TestCase
                 'img' => 'img',
                 'datetime' => '2022/12/24 18:00:00'
             ]);
-
             $this->assertCount(1, Adoption::all());
-
     }
-
     public function test_anAdoptionCanBeUpdated(){
         $this->withExceptionHandling();
-
         $adoption = Adoption::factory()->create();
         $this->assertCount(1, Adoption::all());
-
         $response = $this->patch(route('updateAdoption', $adoption->id), ['name' => 'New Name']);
         $this->assertEquals('New Name', Adoption::first()->name);
-
-
-
     }
 }
