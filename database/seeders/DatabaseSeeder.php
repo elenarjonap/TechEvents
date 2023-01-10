@@ -5,6 +5,7 @@ namespace Database\Seeders;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use App\Models\Adoption;
 use Illuminate\Database\Seeder;
+use App\Models\User;
 
 class DatabaseSeeder extends Seeder
 {
@@ -44,5 +45,9 @@ class DatabaseSeeder extends Seeder
             'datetime' => '2023-01-09 13:30:00',
         ]);
         Adoption::factory(5)->create();
+
+        User::factory()->create(['name' => 'admin', 'email' => 'admin@admin.com']);
+
+        User::factory(5)->create();
     }
 }
