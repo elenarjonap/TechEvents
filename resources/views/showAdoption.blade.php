@@ -8,5 +8,8 @@
 			<h2>{{ $adoption->description }}</h2>
 			<h2>{{ $adoption->datetime }}</h2>
 			</div>
+			<div class="float-right">
+				<a class="btn btn-primary mb-3" href="{{ route('home') }}">↩</a>
+			</div>
 		</div>
 @endsection
