@@ -8,10 +8,9 @@ Las notas - Abrazanos
 
 ***
 ## Group members:
-+ Elena
++ Elena 
 + Paloma
 + Sierri
-+ Leidy
 + Paula 
 ***
 ## Screenshots:
@@ -25,10 +24,13 @@ Las notas - Abrazanos
 
 
 ## Stacks:
-
++ Html, Css, Jv, Larvel. MySql, Bootstrap
 
 ***
 ## Methodology:
++ Metodología Agile with Scrum
++ Mob Programming
++ TDD
 
 ***
 ## Next steps:
