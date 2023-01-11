@@ -8,10 +8,9 @@ Las notas - Abrazanos
 
 ***
 ## Group members:
-+ Elena
++ Elena 
 + Paloma
 + Sierri
-+ Leidy
 + Paula 
 ***
 ## Screenshots:
