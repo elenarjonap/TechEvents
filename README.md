@@ -25,12 +25,13 @@ Las notas - Abrazanos
 
 
 ## Stacks:
-+ Metodología Agile with Scrum
-+ Mob Programming
-+ TDD
++ Html, Css, Jv, Larvel. MySql, Bootstrap
 
 ***
 ## Methodology:
++ Metodología Agile with Scrum
++ Mob Programming
++ TDD
 
 ***
 ## Next steps:
