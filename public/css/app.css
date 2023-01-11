@@ -19,6 +19,12 @@ body {
     width: 700px;
 }
 
+/* Main */
+
+a:not([class]) {
+    text-decoration: none;
+}
+
 /* Footer */
 
 .mainFooter {

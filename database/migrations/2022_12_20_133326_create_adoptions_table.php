@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('adoptions', function (Blueprint $table) {
             $table->id();
             $table->string('name', 150);
-            $table->string('description', 250);
+            $table->string('description', 500);
             $table->integer('spaces');
             $table->string('img');
             $table->dateTime('datetime');
