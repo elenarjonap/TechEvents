@@ -25,7 +25,7 @@ Las notas - Abrazanos
 
 
 ## Stacks:
-+ Metodología Agile con Scrum
++ Metodología Agile with Scrum
 + Mob Programming
 + TDD
 
