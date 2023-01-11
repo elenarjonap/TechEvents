@@ -1,0 +1,41 @@
+body {
+    font-family: "Open Sans" !important;
+}
+
+/* Header */
+
+.mainHeader {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #7eb376;
+    padding: 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+}
+
+.siteIdentity img {
+    width: 700px;
+}
+
+/* Footer */
+
+.mainFooter {
+    background-color: #7eb376;
+}
+
+.footerInfo {
+    display: inline;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+}
+
+.footerSocialMedia a {
+    padding: 0 1rem;
+}
+
+.footerSocialMedia img {
+    width: 35px;
+}

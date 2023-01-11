@@ -1,4 +1,5 @@
 @extends('layouts.app')
+@include('header')
 @section('content')
 		<div class="text-center">
 			<img class="img-thumbnail" src="{{ $adoption->img }}" alt="">
@@ -12,4 +13,5 @@
 				<a class="btn btn-primary mb-3" href="{{ route('home') }}">↩</a>
 			</div>
 		</div>
+@include('footer')
 @endsection

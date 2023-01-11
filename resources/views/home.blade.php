@@ -1,4 +1,5 @@
 @extends('layouts.app')
+@include('header')
 @section('content')
 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
@@ -33,15 +34,13 @@
         @foreach ($adoptions as $adoption)
         <div class="card" style="width: 18rem;">
             <a href="{{ route('showAdoption', ['id' => $adoption->id]) }}">
-                <img src="{{ $adoption->img }}" class="card-img-top" alt="...">
-                
-                
+                <img src="{{ $adoption->img }}" class="card-img-top" alt="...">            
                 <div class="card-body">
                     <h5 class="card-title">{{ $adoption->name }}</h5>
                     <h5 class="card-title">{{ $adoption->spaces }} Abrazos</h5>
                     <h5 class="card-title">{{ $adoption->datetime }}</h5>
                     <!-- <p class="card-text">{{ $adoption->description }}</p> -->
-                    <a href="#" class="btn btn-primary">Adoptar</a> 
+                    <a href="#" class="btn btn-primary">Adóptame</a> 
                     <form action="{{ route('deleteAdoption', ['id' => $adoption->id]) }}" method="post">
                         @method('delete')
                         @csrf
@@ -57,4 +56,5 @@
             </a>
     @endforeach
     </div>
+@include('footer')
 @endsection
