@@ -24,11 +24,13 @@
     </button>
 </div>
 <div>
-    <button class="btn btn-primary">
-        <a href="{{ route('createAdoption') }}">
-            <div class="text-warning">CREAR NUEVA ADOPCIÓN</div>
-        </a>
-    </button>
+    @if(Auth::check() && Auth::user()->isAdmin)
+        <button class="btn btn-primary">
+            <a href="{{ route('createAdoption') }}">
+                <div class="text-warning">CREAR NUEVA ADOPCIÓN</div>
+            </a>
+        </button>
+    @endif
 </div>
     <div class="d-flex flex-wrap row justify-content-center my-4 px-xxl-5">
         @foreach ($adoptions as $adoption)
@@ -44,16 +46,20 @@
                     <form action="{{ route('deleteAdoption', ['id' => $adoption->id]) }}" method="post">
                         @method('delete')
                         @csrf
+                        @if(Auth::check() && Auth::user()->isAdmin)
                         <button type="submit"
                             class="bt-adm m-1 d-flex justify-content-center align-items-center"
-                            onclick="return confirm('¿Insistes en no adoptar? {{ $adoption->name }} - ID {{ $adoption->id }} ')">🗑️
+                            onclick="return confirm('¿Quieres borrar esta entrada? {{ $adoption->name }} - ID {{ $adoption->id }} ')">🗑️
                         </button>
+
                         <a class="bt-adm m-1 d-flex justify-content-center align-items-center"
                             href="{{ route('editAdoption', ['id' => $adoption->id]) }}">✏️</a>
-                    </form>
+                            @endif
+                        </form>
                 </div> 
             </div>
             </a>
+            
     @endforeach
     </div>
 @include('footer')

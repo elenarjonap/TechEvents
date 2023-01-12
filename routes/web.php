@@ -23,15 +23,15 @@ Route::get('/',[AdoptionController::class, 'index'])->name('home');
 Route::get('/home',[AdoptionController::class, 'index']);
 
 // D del CRUD
-Route::delete('/delete/{id}', [AdoptionController::class, 'destroy'])->name('deleteAdoption');
+Route::delete('/delete/{id}', [AdoptionController::class, 'destroy'])->name('deleteAdoption')->middleware('isadmin', 'auth');
 
 // C del CRUD
-Route::get('/create', [AdoptionController::class, 'create'])->name('createAdoption');
-Route::post('/', [AdoptionController::class, 'store'])->name('storeAdoption');
+Route::get('/create', [AdoptionController::class, 'create'])->name('createAdoption')->middleware('isadmin', 'auth');
+Route::post('/', [AdoptionController::class, 'store'])->name('storeAdoption')->middleware('isadmin', 'auth');
 
 // U del CRUD
-Route::get('/edit/{id}', [AdoptionController::class, 'edit'])->name('editAdoption');
-Route::patch('/adoption/{id}', [AdoptionController::class, 'update'])->name('updateAdoption');
+Route::get('/edit/{id}', [AdoptionController::class, 'edit'])->name('editAdoption')->middleware('isadmin', 'auth');
+Route::patch('/adoption/{id}', [AdoptionController::class, 'update'])->name('updateAdoption')->middleware('isadmin', 'auth');
 
 //Show
 Route::get('/show/{id}', [AdoptionController::class, 'show'])->name('showAdoption');

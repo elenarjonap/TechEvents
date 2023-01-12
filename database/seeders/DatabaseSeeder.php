@@ -44,10 +44,20 @@ class DatabaseSeeder extends Seeder
             'img' => 'https://img.freepik.com/foto-gratis/gato-rojo-o-blanco-i-estudio-blanco_155003-13189.jpg?w=740&t=st=1671713568~exp=1671714168~hmac=89f545f2fe19cafead8737344857482646eff4e70ba692f4bac62839e2cf3101',
             'datetime' => '2023-01-09 13:30:00',
         ]);
-        Adoption::factory(5)->create();
 
-        User::factory()->create(['name' => 'admin', 'email' => 'admin@admin.com']);
+        Adoption::factory()->create([
+            'name' => 'Manila',
+            'description' => 'Gata, 6 años. Manila es una gata muy cariñosa y especial, es independiente de los demás gatos del refugio pero con las personas es muy mimosa. Ella fue rescatada de una colonia callejera y desde entonces vive en nuestro refugio. Es una gata adorable y su pelito es como de algodón, corto y denso.',
+            'spaces' => '14',
+            'img' => 'https://res.cloudinary.com/dog5ljnve/image/upload/v1673353332/gato.jpg',
+            'datetime' => '2023-03-15 12:30:00',
+        ]);
+        Adoption::factory(6)->create();
 
-        User::factory(5)->create();
+        User::factory()->create(['name' => 'admin', 'email' => 'admin@admin.com', 'isAdmin' => true]);
+
+        User::factory()->create(['name' => 'user1', 'email' => 'user1@user1.com', 'isAdmin' => false]);
+
+        /* User::factory(5)->create(); */
     }
 }
