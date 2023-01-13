@@ -47,10 +47,10 @@
                     @if(Auth::check() && Auth::user()->isAdmin)
                     <button type="submit"
                         class="bt-adm m-1 d-flex justify-content-center align-items-center"
-                        onclick="return confirm('¿Quieres borrar esta entrada? {{ $adoption->name }} - ID {{ $adoption->id }} ')">🗑️
+                        onclick="return confirm('¿Quieres borrar esta entrada? {{ $adoption->name }} - ID {{ $adoption->id }} ')"><img src="https://res.cloudinary.com/dog5ljnve/image/upload/v1673611489/LasNotas/marca-x_7_g0band.png" alt="botón borrar">
                     </button>
                     <a class="bt-adm m-1 d-flex justify-content-center align-items-center"
-                        href="{{ route('editAdoption', ['id' => $adoption->id]) }}">✏️</a>
+                        href="{{ route('editAdoption', ['id' => $adoption->id]) }}"><img src="https://res.cloudinary.com/dog5ljnve/image/upload/v1673611647/LasNotas/editar_1_t7z0e0.png" alt="botón editar"></a>
                     @endif
                 </form>
             </div> 
