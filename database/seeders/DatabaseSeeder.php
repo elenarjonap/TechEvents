@@ -94,5 +94,14 @@ class DatabaseSeeder extends Seeder
         User::factory()->create(['name' => 'user1', 'email' => 'user1@user1.com', 'isAdmin' => false]);
 
         /* User::factory(5)->create(); */
+
+        User::factory()
+        ->has(Adoption::factory()->count(5))
+        ->create();
+
+        Adoption::factory()
+        ->has(User::factory()->count(5))
+        ->create();
+
     }
 }

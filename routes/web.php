@@ -35,3 +35,8 @@ Route::patch('/adoption/{id}', [AdoptionController::class, 'update'])->name('upd
 
 //Show
 Route::get('/show/{id}', [AdoptionController::class, 'show'])->name('showAdoption');
+
+//Inscribirse/desinscribirse
+Route::get('/inscribe/{id}', [AdoptionController::class, 'inscribe'])->name('inscribe')->middleware('auth');
+Route::get('/unscribe/{id}', [AdoptionController::class, 'unscribe'])->name('unscribe')->middleware('auth');
+
