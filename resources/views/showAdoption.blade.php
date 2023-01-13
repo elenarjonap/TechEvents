@@ -1,5 +1,4 @@
 @extends('layouts.app')
-@include('header')
 @section('content')
 		<div class="text-center">
 			<img class="img-thumbnail" src="{{ $adoption->img }}" alt="">
@@ -10,8 +9,8 @@
 			<h2>{{ $adoption->datetime }}</h2>
 			</div>
 			<div class="float-right">
-				<a class="btn btn-primary mb-3" href="{{ route('home') }}">↩</a>
+				<a href="#" class="btn btn-primary">Adóptame</a> 
+				<a class="btn btn-secondary mb-3" href="{{ route('home') }}">↩</a>
 			</div>
 		</div>
-@include('footer')
 @endsection

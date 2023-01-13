@@ -25,9 +25,9 @@
 <div class="container mt-5">
     <div class="d-flex justify-content-center">
         @if(Auth::check() && Auth::user()->isAdmin)
-            <button class="btn btn-primary">
+            <button class="btn btn-secondary">
                 <a href="{{ route('createAdoption') }}">
-                    <div class="text-warning">CREAR NUEVA ADOPCIÓN</div>
+                    <div class="text-white">CREAR NUEVA ADOPCIÓN</div>
                 </a>
             </button>
         @endif
