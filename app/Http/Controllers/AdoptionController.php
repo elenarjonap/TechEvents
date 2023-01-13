@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\Adoption;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use App\Models\User;
 
 class AdoptionController extends Controller
 {
@@ -16,8 +18,11 @@ class AdoptionController extends Controller
     {
         //
         $adoptions = Adoption::get();
+        $adoptionsold
+        $adoptionsnew
+        $adoptionsinscribe
         //var_dump($adoptions);
-        return view('home', compact('adoptions'));
+        return view('home', compact('adoptions', 'adoptionsold', 'adoptionsnew'));
         
     }
 
@@ -94,6 +99,26 @@ class AdoptionController extends Controller
     public function destroy($id)
     {
         Adoption::destroy($id);
+        return redirect()->route('home');
+    }
+
+    public function inscribe($id)
+    {
+        $adoption = Adoption::find($id);
+        $user = User::find(Auth::id());
+
+        $user->adoption()->attach($adoption);  
+        
+        return redirect()->route('home');
+    }
+
+    public function unscribe($id)
+    {
+        $adoption = Adoption::find($id);
+        $user = User::find(Auth::id());
+
+        $user->adoption()->detach($adoption);  
+        
         return redirect()->route('home');
     }
 }

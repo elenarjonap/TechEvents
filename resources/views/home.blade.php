@@ -40,7 +40,8 @@
                 <h4 class="card-title">{{ $adoption->name }}</h4>
                 <p class="card-title"><span class="h5">{{ $adoption->spaces }} Abrazos</span> · {{ $adoption->datetime }}</p>
                 <!-- <p class="card-text">{{ $adoption->description }}</p> -->
-                <a href="#" class="btn btn-primary">Adóptame</a> 
+                <a href="{{route('inscribe', $adoption->id)}}" class="btn btn-primary">Adóptame</a> 
+                <a href="{{route('unscribe', $adoption->id)}}" class="btn btn-primary">XXX</a> 
                 <form action="{{ route('deleteAdoption', ['id' => $adoption->id]) }}" method="post">
                     @method('delete')
                     @csrf
