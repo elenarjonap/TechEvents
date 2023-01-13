@@ -1,16 +1,14 @@
-/* :root {
-    --bs-primary: #d5882e;
-    --bs-secondary: #7eb376;
-    --bs-success: #28a745;
-    --bs-info: #17a2b8;
-    --bs-warning: #ffc107;
-    --bs-danger: #dc3545;
-    --bs-light: #f8f9fa;
-    --bs-dark: #343a40;
-} */
+@import url(https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,200&display=swap);
+@charset "UTF-8";
+@font-face {
+font-family: "Woodstamp";
+src: local("Woodstamp"), url(/fonts/Woodstamp.otf?797fc51e100c76e17fd793419d091f6f);
+}
+
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #D8EDD4;
 }
 
 /* Header */
@@ -19,7 +17,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    background-color: #7eb376;
+    background-color: #7EB376;
     padding: 50px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -34,25 +32,33 @@ body {
 
 a:not([class]) {
     text-decoration: none;
+    color: black !important;
 }
 
-.card-body {
+.card-img-top {
+    border-radius: 5%;
+}
 
+.card {
+    background-color: #D9D9D9;
 }
 
 /* Footer */
 
 .mainFooter {
-    background-color: #7eb376;
+    background-color: #7EB376;
 }
 
 .footerInfo {
     display: inline;
     font-size: 18px;
     font-weight: 500;
-    color: white;
+    color: black;
 }
 
+.footerLogo img {
+    width: 200px;
+}
 .footerSocialMedia a {
     padding: 0 1rem;
 }

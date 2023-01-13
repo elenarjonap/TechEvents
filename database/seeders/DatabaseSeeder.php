@@ -59,7 +59,7 @@ class DatabaseSeeder extends Seeder
             'name' => 'Turquino',
             'description' => 'Turquino Siendo a penas un cachorro, Turquino fue encadenado. Todavía tenía que crecer, pero nadie tuvo eso en cuenta, y nunca le quitaron esa cadena. Con el tiempo, su cuello se hizo más grande, y dado que la cadena no podía ceder, se le fue incrustando poco a poco. Le liberamos de esa cadena y ya sus heridas fueron sanando. Él quiere correr y jugar. Siempre había querido libertad y cariño. Turquino ya está genial, enérgico y juguetón.',
             'spaces' => '9',
-            'img' => 'https://res.cloudinary.com/dog5ljnve/image/upload/v1673515159/LasNotas/perro.jpg',
+            'img' => 'https://res.cloudinary.com/dog5ljnve/image/upload/v1673604210/LasNotas/firulais.png',
             'datetime' => '2023-03-16 17:45:00',
         ]);
 
@@ -70,6 +70,7 @@ class DatabaseSeeder extends Seeder
             'img' => 'https://res.cloudinary.com/dog5ljnve/image/upload/v1673516921/LasNotas/Ratas.jpg',
             'datetime' => '2023-03-16 19:45:00',
         ]);
+        
         /* Adoption::factory(6)->create(); */
 
         User::factory()->create(['name' => 'admin', 'email' => 'admin@admin.com', 'isAdmin' => true]);
