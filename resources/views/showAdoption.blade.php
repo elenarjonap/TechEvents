@@ -1,19 +1,18 @@
 @extends('layouts.app')
 @section('content')
-
-		<div class="container d-flex justify-content-center">
-			<div class="card" style="width: 20rem;">
-				<img class="card-img-top" src="{{ $adoption->img }}" alt="">
-				<div class="card-body">
-						<h2>{{ $adoption->name }}</h2>
-						<h2>{{ $adoption->spaces }} Abrazos</h2>
-						<h2>{{ $adoption->description }}</h2>
-						<h2>{{ $adoption->datetime }}</h2>
-						<div class="float-right">
-							<a href="#" class="btn btn-primary">Adóptame</a> 
-							<a class="btn btn-secundary mb-3" href="{{ route('home') }}">↩</a>
-				</div>
+<div class="container justify-content-center" style="max-width: 36rem">
+	<div class="card">
+		<img class="card-img-top" src="{{ $adoption->img }}" alt="foto de animal en adopción">
+		<div class="card-body">
+			<h1 class="text-center mb-2">{{ $adoption->name }}</h1>
+			<h3 class="text-center mb-4"><span class="h2">{{ $adoption->spaces }} Abrazos</span> · {{ $adoption->datetime }}</h3>
+			<h2 class="">{{ $adoption->description }}</h2>
+			<div class="float-right">
+				<a href="#" class="btn btn-primary mt-4 mb-4">Adóptame</a>
+				<a href="{{route('unscribe', $adoption->id)}}" class="btn mb-2"><img src="/images/cancel.png"></a>
 			</div>
 		</div>
-		
+	</div>
+	<a class="btn mt-5 mb-1" href="{{ route('home') }}"><img src="/images/return.png"></a>
+</div>
 @endsection

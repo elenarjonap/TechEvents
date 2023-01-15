@@ -18,11 +18,12 @@ class AdoptionController extends Controller
     {
         //
         $adoptions = Adoption::get();
-        $adoptionsold
+        /* $adoptionsold
         $adoptionsnew
-        $adoptionsinscribe
+        $adoptionsinscribe */
         //var_dump($adoptions);
-        return view('home', compact('adoptions', 'adoptionsold', 'adoptionsnew'));
+        /* return view('home', compact('adoptions', 'adoptionsold', 'adoptionsnew')); */
+        return view('home', compact('adoptions'));
         
     }
 

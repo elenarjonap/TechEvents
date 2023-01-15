@@ -33,15 +33,13 @@
 </div>
 <div class="d-flex flex-wrap row justify-content-center my-4 px-xxl-5">
     @foreach ($adoptions as $adoption)
-    <div class="card mb-4 m-4" style="width: 18rem;">
+    <div class="card mb-4 m-4" style="width: 20rem;">
         <a href="{{ route('showAdoption', ['id' => $adoption->id]) }}">
             <img src="{{ $adoption->img }}" class="card-img-top mt-3" alt="foto de animal en adopción">            
-            <div class="card-body mt-3">
+            <div class="card-body">
                 <h4 class="card-title">{{ $adoption->name }}</h4>
-                <p class="card-title"><span class="h5">{{ $adoption->spaces }} Abrazos</span> · {{ $adoption->datetime }}</p>
-                <!-- <p class="card-text">{{ $adoption->description }}</p> -->
-                <a href="{{route('inscribe', $adoption->id)}}" class="btn btn-primary">Adóptame</a> 
-                <a href="{{route('unscribe', $adoption->id)}}" class="btn btn-primary">XXX</a> 
+                <p class="card-title"><span class="h5">{{ $adoption->spaces }} Abrazos</span></p>
+                <a href="{{route('inscribe', $adoption->id)}}" class="btn btn-primary">Adóptame</a>
                 <form action="{{ route('deleteAdoption', ['id' => $adoption->id]) }}" method="post">
                     @method('delete')
                     @csrf
