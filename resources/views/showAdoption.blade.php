@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
 <div class="container justify-content-center" style="max-width: 36rem">
-	<div class="cardg">
+	<div class="cardBorder">
 		<div class="card">
 			<img class="card-img-top" src="{{ $adoption->img }}" alt="foto de animal en adopción">
 			<div class="card-body">
