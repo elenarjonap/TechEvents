@@ -62,7 +62,6 @@
         <a class="btn mt-5 mb-1" href="{{ route('home') }}"><img src="/images/return.png"></a>
     </div>
 </div>
-@endsection
     <div>
         {!!$adoptions->links()!!}
     </div>
