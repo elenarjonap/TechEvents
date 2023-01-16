@@ -44,7 +44,7 @@
                     @method('delete')
                     @csrf
                     @if(Auth::check() && Auth::user()->isAdmin)
-                    <div class="d-flex ">
+                    <div class="d-flex">
                     <a class="btn text-end mt-2"
                         href="{{ route('editAdoption', ['id' => $adoption->id]) }}"><img src="/images/edit.png" alt="botón editar"></a>
                     <button type="submit"
