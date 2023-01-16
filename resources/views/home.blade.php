@@ -44,17 +44,22 @@
                     @method('delete')
                     @csrf
                     @if(Auth::check() && Auth::user()->isAdmin)
+                    <div class="d-flex ">
+                    <a class="btn text-end mt-2"
+                        href="{{ route('editAdoption', ['id' => $adoption->id]) }}"><img src="/images/edit.png" alt="botón editar"></a>
                     <button type="submit"
-                        class="bt-adm m-1 d-flex justify-content-center align-items-center"
-                        onclick="return confirm('¿Quieres borrar esta entrada? {{ $adoption->name }} - ID {{ $adoption->id }} ')"><img src="https://res.cloudinary.com/dog5ljnve/image/upload/v1673611489/LasNotas/marca-x_7_g0band.png" alt="botón borrar">
+                        class="btn text-end mt-2"
+                        onclick="return confirm('¿Quieres borrar esta entrada? {{ $adoption->name }} - ID {{ $adoption->id }} ')"><img src="/images/cancel.png" alt="botón borrar">
                     </button>
-                    <a class="bt-adm m-1 d-flex justify-content-center align-items-center"
-                        href="{{ route('editAdoption', ['id' => $adoption->id]) }}"><img src="https://res.cloudinary.com/dog5ljnve/image/upload/v1673611647/LasNotas/editar_1_t7z0e0.png" alt="botón editar"></a>
+                    </div>
                     @endif
                 </form>
             </div> 
         </a>
     </div>            
     @endforeach
+    <div class="container justify-content-center" style="max-width: 36rem">
+        <a class="btn mt-5 mb-1" href="{{ route('home') }}"><img src="/images/return.png"></a>
+    </div>
 </div>
 @endsection
