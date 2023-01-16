@@ -42,5 +42,4 @@ Las notas - Abrazanos
 + TDD
 
 ***
-## Next steps:
 
