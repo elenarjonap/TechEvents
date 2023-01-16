@@ -27,6 +27,10 @@ Las notas - Abrazanos
 ***
 ![atomic](https://user-images.githubusercontent.com/90152938/212619951-7c29a078-7beb-4ac1-9bf1-25e110701e96.PNG)
 
+* Diagramas
+***
+![diagrama](https://user-images.githubusercontent.com/90152938/212621889-2a7c3cd8-3e3c-46ea-9b70-18b70759f41d.PNG)
+
 
 ## Stacks:
 + Html, Css, Jv, Larvel. MySql, Bootstrap
