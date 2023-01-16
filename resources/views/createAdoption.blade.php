@@ -29,11 +29,8 @@
 								<span class="input-group-text" id="inputGroup-sizing-default">Fecha</span>
 								<input type="text" name="datetime" class="form-control subirFoto" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Fecha">
 							</div>
-							<div class="float-right">
-								<a class="btn btn-primary mb-3" href="{{ route('home') }}">↩</a>
-							</div>
 							<div class="btnCreate">
-								<button type="submit" class="btn btn-outline-success" value="Create">Crear</button>
+								<button type="submit" class="btn" value="Create"><img src="/images/save.png" alt="botón guardar"></button>
 							</div>
 						</form>
 					</div>
@@ -41,4 +38,7 @@
 			</div>
 		</div>
 	</div>
+	<div class="container justify-content-center" style="max-width: 62rem">
+        <a class="btn mt-5 mb-1" href="{{ route('home') }}"><img src="/images/return.png" alt="botón volver a la vista principal"></a>
+    </div>
 @endsection

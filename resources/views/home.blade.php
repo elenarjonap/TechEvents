@@ -58,8 +58,8 @@
         </a>
     </div>            
     @endforeach
-    <div class="container justify-content-center" style="max-width: 36rem">
-        <a class="btn mt-5 mb-1" href="{{ route('home') }}"><img src="/images/return.png"></a>
+    <div class="container justify-content-center" style="max-width: 65rem">
+        <a class="btn mt-5 mb-1" href="{{ route('home') }}"><img src="/images/return.png" alt="botón volver a la vista principal"></a>
     </div>
 </div>
     <div>
