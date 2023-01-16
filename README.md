@@ -8,7 +8,7 @@ Las notas - Abrazanos
 
 ***
 ## Group members:
-+ Elena @elenarjonap
++ Elena https://github.com/elenarjonap
 + Paloma
 + Sierri
 + Paula 
