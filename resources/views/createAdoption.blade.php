@@ -30,7 +30,7 @@
 									<span class="input-group-text" id="inputGroup-sizing-default">Fecha</span>
 									<input type="text" name="datetime" class="form-control subirFoto" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Fecha">
 								</div>
-								<div class="btnCreate">
+								<div class="btnCreate text-end">
 									<button type="submit" class="btn" value="Create"><img src="/images/save.png" alt="botón guardar"></button>
 								</div>
 							</form>

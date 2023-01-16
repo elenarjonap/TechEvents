@@ -39,12 +39,12 @@
             <div class="card-body">
                 <h4 class="card-title">{{ $adoption->name }}</h4>
                 <p class="card-title"><span class="h5">{{ $adoption->spaces }} Abrazos</span></p>
-                <a href="{{route('inscribe', $adoption->id)}}" class="btn btn-primary fs-5">Adóptame</a>
+                <a href="{{ route('inscribe', $adoption->id) }}" class="btn btn-primary fs-5" onclick="return confirm('¿Quieres inscribirte en el proceso de adopción? {{ $adoption->name }} - ID {{ $adoption->id }} ')">Adóptame</a>
                 <form action="{{ route('deleteAdoption', ['id' => $adoption->id]) }}" method="post">
                     @method('delete')
                     @csrf
                     @if(Auth::check() && Auth::user()->isAdmin)
-                    <div class="d-flex">
+                    <div class="d-flex justify-content-end">
                     <a class="btn text-end mt-2"
                         href="{{ route('editAdoption', ['id' => $adoption->id]) }}"><img src="/images/edit.png" alt="botón editar"></a>
                     <button type="submit"
