@@ -23,8 +23,7 @@ class AdoptionController extends Controller
         $adoptionsinscribe */
         //var_dump($adoptions);
         /* return view('home', compact('adoptions', 'adoptionsold', 'adoptionsnew')); */
-        return view('home', compact('adoptions'));
-        
+        return view('home', compact('adoptions'));       
     }
 
     /**

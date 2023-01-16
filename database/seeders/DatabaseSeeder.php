@@ -86,22 +86,56 @@ class DatabaseSeeder extends Seeder
             'img' => 'https://res.cloudinary.com/dog5ljnve/image/upload/v1673608110/LasNotas/gallina_f4w33l.png',
             'datetime' => '2023-03-21 17:00:00',
         ]);
-        
-        /* Adoption::factory(6)->create(); */
+
+        Adoption::factory()->create([
+            'name' => 'Amis',
+            'description' => 'Coballa de 5 meses. Amis es hijo de Star. Tuvo la suerte de nacer en una de nuestras casas de acogida y no en el polígono donde recogimos a la madre y donde posiblemente no hubiese sobrevivido.
+            Es un poco miedoso, por eso necesita alguien que le dedique tiempo para que vaya tomando confianza. Amis no se da en adopción para vivir solo. Debe convivir al menos con otro cobaya',
+            'spaces' => '10',
+            'img' => '',
+            'datetime' => '2023-03-24 16:00:00',
+        ]);
+
+        Adoption::factory()->create([
+            'name' => 'Mónica',
+            'description' => 'Vaca de 2 años. Mónica fue rescata de una terrible situación de maltrato.
+            Ella permanecía junto a otras vacas y terneros en una explotación de Boiro, Galicia que fue denunciada porque los animales estaban famélicos y atados a cortas cadenas que les impedía moverse. Ahora es una vaca muy simpática, que siempre se acerca a saludar y a la que le encanta comer, pastar junto a su familia bovina y tomar el sol. Todo aquello que durante años no pudo disfrutar.',
+            'spaces' => '20',
+            'img' => '',
+            'datetime' => '2023-03-24 17:00:00',
+        ]);
+
+        Adoption::factory()->create([
+            'name' => 'Galleta',
+            'description' => 'Cabra de 1 año. La encontraron con pocos días de vida sola y la han estado cuidando con mucho amor hasta que ha podido venir con nosotras, Está deseando encontrar una súper familia de cabras y personas!',
+            'spaces' => '20',
+            'img' => '',
+            'datetime' => '2023-03-25 17:00:00',
+        ]);
+
+        Adoption::factory()->create([
+            'name' => 'Coti y Kote',
+            'description' => 'Cotorras argentinas de 1 mes. Coti y Kote son dos Cotorras Argentinas. Cunado llega la poda de las palmeras cantidades inmensas de nidos caen y estas aves fallecen en el proceso, Estos dos han sido recogidos por unas amigas y son papilleras alimentadas por la Asociación. Al ser papilleras tendrán afinidad con las personas que los adopten.',
+            'spaces' => '20',
+            'img' => '',
+            'datetime' => '2023-03-26 19:45:00',
+        ]);
+
+        Adoption::factory()->create([
+            'name' => 'DUPLICADO',
+            'description' => 'Cotorras argentinas de 1 mes. Coti y Kote son dos Cotorras Argentinas. Cunado llega la poda de las palmeras cantidades inmensas de nidos caen y estas aves fallecen en el proceso, Estos dos han sido recogidos por unas amigas y son papilleras alimentadas por la Asociación. Al ser papilleras tendrán afinidad con las personas que los adopten.',
+            'spaces' => '20',
+            'img' => '',
+            'datetime' => '2023-03-26 19:45:00',
+        ]);
 
         User::factory()->create(['name' => 'admin', 'email' => 'admin@admin.com', 'isAdmin' => true]);
 
         User::factory()->create(['name' => 'user1', 'email' => 'user1@user1.com', 'isAdmin' => false]);
 
-        /* User::factory(5)->create(); */
+        User::factory()->create(['name' => 'user2', 'email' => 'user2@user2.com', 'isAdmin' => false]);
 
-        User::factory()
-        ->has(Adoption::factory()->count(5))
-        ->create();
-
-        Adoption::factory()
-        ->has(User::factory()->count(5))
-        ->create();
+        User::factory()->create(['name' => 'user3', 'email' => 'user3@user3.com', 'isAdmin' => false]);
 
     }
 }
