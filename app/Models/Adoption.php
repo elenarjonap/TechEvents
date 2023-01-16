@@ -14,6 +14,7 @@ class Adoption extends Model
         'spaces',
         'img',
         'datetime',
+        'ifAdopted',
     ];
 
     public function user(){

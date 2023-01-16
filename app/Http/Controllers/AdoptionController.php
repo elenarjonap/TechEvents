@@ -18,6 +18,11 @@ class AdoptionController extends Controller
     {
         //
         $adoptions = Adoption::Paginate(6);
+        //como usuario logguedo hazme un array con las adopciones inscritas.
+        //Hazme un doble foreach. Primer foreach todas las adopciones y el segundo foreach en el que estoy inscrito
+        // ifAdoption is true. Si es true ponme un boton y si no otro botón. Crear dos botones iguales
+        // esconder con if el botón
+
         /* $adoptionsold
         $adoptionsnew
         $adoptionsinscribe */

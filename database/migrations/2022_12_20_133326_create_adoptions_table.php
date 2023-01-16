@@ -20,6 +20,7 @@ return new class extends Migration
             $table->integer('spaces');
             $table->string('img');
             $table->dateTime('datetime');
+            $table->boolean('ifAdopted')->default(0);
             $table->timestamps();
         });
     }
