@@ -17,7 +17,7 @@ class AdoptionController extends Controller
     public function index()
     {
         //
-        $adoptions = Adoption::Paginate(3);
+        $adoptions = Adoption::Paginate(6);
         /* $adoptionsold
         $adoptionsnew
         $adoptionsinscribe */

@@ -5,7 +5,7 @@
 			<div class="col-md-8">
 				<div class="card">
 					<div class="card-body">
-						<h2 class="cardTitle d-flex flex-wrap row justify-content-center">Crear nueva adopción</h2>
+						<h2 class="cardTitle mb-4 d-flex flex-wrap row justify-content-center">Crear nueva adopción</h2>
 							<form class="justify-content-center" action="{{ route('storeAdoption') }}" method="post">
 								@csrf
 							<div class="input-group mb-3">
