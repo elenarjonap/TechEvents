@@ -16,6 +16,8 @@ Las notas - Abrazanos
 ## Screenshots:
 
 * Sketch
+![sketch](https://user-images.githubusercontent.com/90152938/212619576-efbb56f6-6443-4c08-8776-bf2a9ae6c59f.PNG)
+
 
 
 
