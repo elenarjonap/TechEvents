@@ -58,18 +58,13 @@
         </a>
     </div>            
     @endforeach
-<<<<<<< HEAD
     <div class="container justify-content-center" style="max-width: 36rem">
         <a class="btn mt-5 mb-1" href="{{ route('home') }}"><img src="/images/return.png"></a>
     </div>
 </div>
 @endsection
-=======
     <div>
         {!!$adoptions->links()!!}
     </div>
 </div>
-
-
 @endsection
->>>>>>> 8aa81ceffb1033a4154f3b6c8010f1e6cc6165d7
