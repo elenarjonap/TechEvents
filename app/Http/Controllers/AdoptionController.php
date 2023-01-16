@@ -17,7 +17,7 @@ class AdoptionController extends Controller
     public function index()
     {
         //
-        $adoptions = Adoption::get();
+        $adoptions = Adoption::Paginate(3);
         /* $adoptionsold
         $adoptionsnew
         $adoptionsinscribe */
@@ -121,5 +121,7 @@ class AdoptionController extends Controller
         $user->adoption()->detach($adoption);  
         
         return redirect()->route('home');
-    }
+    }  
+    
+    
 }

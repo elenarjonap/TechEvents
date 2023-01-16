@@ -56,5 +56,10 @@
         </a>
     </div>            
     @endforeach
+    <div>
+        {!!$adoptions->links()!!}
+    </div>
 </div>
+
+
 @endsection
