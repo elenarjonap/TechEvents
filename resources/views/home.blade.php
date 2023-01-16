@@ -26,7 +26,7 @@
         @if(Auth::check() && Auth::user()->isAdmin)
             <button class="btn btn-secondary">
                 <a href="{{ route('createAdoption') }}">
-                    <div class="text-white">CREAR NUEVA ADOPCIÓN</div>
+                    <div class="text-white fs-4">CREAR NUEVA ADOPCIÓN</div>
                 </a>
             </button>
         @endif
@@ -39,7 +39,7 @@
             <div class="card-body">
                 <h4 class="card-title">{{ $adoption->name }}</h4>
                 <p class="card-title"><span class="h5">{{ $adoption->spaces }} Abrazos</span></p>
-                <a href="{{route('inscribe', $adoption->id)}}" class="btn btn-primary">Adóptame</a>
+                <a href="{{route('inscribe', $adoption->id)}}" class="btn btn-primary fs-5">Adóptame</a>
                 <form action="{{ route('deleteAdoption', ['id' => $adoption->id]) }}" method="post">
                     @method('delete')
                     @csrf
