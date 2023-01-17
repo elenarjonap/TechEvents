@@ -14,8 +14,8 @@ Las notas - Abrazanos
 + Paula     https://github.com/pagudelo884
 ***
 ## Screenshots:
-| Name | Role | <img src="https://github.com/Yelose/Yelose/blob/main/img/github.png" width="30px" height="30px"> |
-| :--- | :---: | :---: |
+| Sketch | Figma | Atomic Desing |Diagram|
+| :--- | :---: | :---: | :---: |
 
 * Sketch
 ***
