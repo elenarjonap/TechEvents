@@ -28,9 +28,9 @@ To run the tests open terminal and enter the command
 <li>vendor/bin/phpunit</li>
 
 ## Methodology:
-+ Metodología Agile with Scrum
-+ Mob Programming
-+ TDD
+<li>Metodología Agile with Scrum</li>
+<li>Mob Programming</li>
+<li>TDD</li>
 
 
 ## Next Steps :
