@@ -39,7 +39,7 @@
             <div class="card-body">
                 <h4 class="card-title">{{ $adoption->name }}</h4>
                 <p class="card-title"><span class="h5">{{ $adoption->spaces }} Abrazos</span></p>
-                <a href="{{ route('inscribe', $adoption->id) }}" class="btn btn-primary fs-5" onclick="return confirm('¿Quieres inscribirte en el proceso de adopción? {{ $adoption->name }} - ID {{ $adoption->id }} ')">Adóptame</a>
+                <a href="{{ route('inscribe', $adoption->id) }}" class="btn btn-primary fs-5" onclick="return confirm('¿Quieres inscribirte en el proceso de adopción? {{ $adoption->name }} - ID {{ $adoption->id }} ')">Abrázame</a>
                 <form action="{{ route('deleteAdoption', ['id' => $adoption->id]) }}" method="post">
                     @method('delete')
                     @csrf
