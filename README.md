@@ -16,7 +16,7 @@ Las notas - Abrazanos
 ## Screenshots:
 | Sketch | Figma | Atomic Desing |Diagram|
 | :--- | :---: | :---: | :---: |
-|<img src="https://user-images.githubusercontent.com/90152938/212619812-fd6142f0-a7ab-4265-b5c0-98826e8c7350.PNG"> |<img src="https://user-images.githubusercontent.com/90152938/212619812-fd6142f0-a7ab-4265-b5c0-98826e8c7350.PNG">  | |
+|<img src="https://user-images.githubusercontent.com/90152938/212619576-efbb56f6-6443-4c08-8776-bf2a9ae6c59f.PNG"> |<img src="https://user-images.githubusercontent.com/90152938/212619812-fd6142f0-a7ab-4265-b5c0-98826e8c7350.PNG">  | |
 
 * Sketch
 ***
