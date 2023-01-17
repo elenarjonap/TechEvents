@@ -10,7 +10,7 @@ Las notas - Abrazanos
 ## Group members:
 + Elena     https://github.com/elenarjonap
 + Paloma    https://github.com/birdsinyourgarden
-+ Sierri    
++ Sierri    https://github.com/sierriconvoz
 + Paula     https://github.com/pagudelo884
 ***
 ## Screenshots:
