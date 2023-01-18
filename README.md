@@ -1,45 +1,46 @@
-# Tech Events Manager Las notas - Abrazanos
+# Tech Events Manager
 ***
 ## Project name: 
 Las notas - Abrazanos
 ***
 ## Project description:
 
+Abrazarnos is an intermediary website where the different associations and animal protectors make known the animals they have to hug.
+
+It is not the people who choose the animals, but rather they request a place to be interviewed by specialists who will decide which of the people is the right one for them.
+
+Why hug us? Because adopting is a 100% bilateral relationship between two species. It is a welcome, a hug, a convience and a mutual love.
+
 
 ***
 ## Group members:
 + Elena     https://github.com/elenarjonap
 + Paloma    https://github.com/birdsinyourgarden
-+ Sierri    
++ Sierri    https://github.com/sierriconvoz
 + Paula     https://github.com/pagudelo884
-***
+
 ## Screenshots:
-
-* Sketch
-***
-![sketch](https://user-images.githubusercontent.com/90152938/212619576-efbb56f6-6443-4c08-8776-bf2a9ae6c59f.PNG)
-
-* Figma
-***
-![figma](https://user-images.githubusercontent.com/90152938/212619812-fd6142f0-a7ab-4265-b5c0-98826e8c7350.PNG)
-
-* Atomic Desing
-***
-![atomic](https://user-images.githubusercontent.com/90152938/212619951-7c29a078-7beb-4ac1-9bf1-25e110701e96.PNG)
-
-* Diagramas
-***
-![diagrama](https://user-images.githubusercontent.com/90152938/212621889-2a7c3cd8-3e3c-46ea-9b70-18b70759f41d.PNG)
-
+| Sketch | Figma | Atomic Desing |Diagram|
+| :--- | :---: | :---: | :---: |
+|<img src="https://user-images.githubusercontent.com/90152938/212619576-efbb56f6-6443-4c08-8776-bf2a9ae6c59f.PNG"> |<img src="https://user-images.githubusercontent.com/90152938/212619812-fd6142f0-a7ab-4265-b5c0-98826e8c7350.PNG"> |<img src="https://user-images.githubusercontent.com/90152938/212619951-7c29a078-7beb-4ac1-9bf1-25e110701e96.PNG"> |<img src="https://user-images.githubusercontent.com/90152938/212621889-2a7c3cd8-3e3c-46ea-9b70-18b70759f41d.PNG">|
 
 ## Stacks:
-+ Html, Css, Jv, Larvel. MySql, Bootstrap
+| Stacks |
+| :--- |
+|<img src="https://user-images.githubusercontent.com/90152938/212902837-d59dfe07-dfbb-44bd-841e-913dffe2f766.png">|
 
-***
+## Run test:
+To run the tests open terminal and enter the command 
+<li>vendor/bin/phpunit</li>
+
 ## Methodology:
-+ Metodología Agile with Scrum
-+ Mob Programming
-+ TDD
+<li>Metodología Agile with Scrum</li>
+<li>Mob Programming</li>
+<li>TDD</li>
 
-***
+
+## Next Steps :
+
+
+
 
