@@ -38,10 +38,10 @@ Why hug us? Because adopting is a 100% bilateral relationship between two specie
 ## Run test:
 To run the tests open terminal and enter the command 
 ```bash
-  php artisan test
-  vendor/bin/phpunit tests
+  <li>php artisan test</li>
+  <li>vendor/bin/phpunit tests</li>
 ```
-<img width="315" alt="Screenshot_1" src="https://user-images.githubusercontent.com/90152938/213181668-8b9c2934-aa8e-4e77-a92d-553ba76ae5af.png">
+<img width="150px" alt="Screenshot_1" src="https://user-images.githubusercontent.com/90152938/213181668-8b9c2934-aa8e-4e77-a92d-553ba76ae5af.png">
 
 
 ## Methodology:
