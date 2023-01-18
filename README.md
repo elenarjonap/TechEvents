@@ -5,6 +5,12 @@ Las notas - Abrazanos
 ***
 ## Project description:
 
+Abrazarnos is an intermediary website where the different associations and animal protectors make known the animals they have to hug.
+
+It is not the people who choose the animals, but rather they request a place to be interviewed by specialists who will decide which of the people is the right one for them.
+
+Why hug us? Because adopting is a 100% bilateral relationship between two species. It is a welcome, a hug, a convience and a mutual love.
+
 
 ***
 ## Group members:
