@@ -12,14 +12,6 @@ It is not the people who choose the animals, but rather they request a place to 
 
 Why hug us? Because adopting is a 100% bilateral relationship between two species. It is a welcome, a hug, a convience and a mutual love.
 
-
-***
-## Group members:
-+ Elena     https://github.com/elenarjonap
-+ Paloma    https://github.com/birdsinyourgarden
-+ Sierri    https://github.com/sierriconvoz
-+ Paula     https://github.com/pagudelo884
-
 ## Screenshots:
 | Sketch | Figma | Atomic Design |Diagram|
 | :--- | :---: | :---: | :---: |
@@ -34,6 +26,13 @@ Why hug us? Because adopting is a 100% bilateral relationship between two specie
 | Stacks |
 | :--- |
 |<img src="https://user-images.githubusercontent.com/90152938/212902837-d59dfe07-dfbb-44bd-841e-913dffe2f766.png">|
+
+***
+## Group members:
++ Elena     https://github.com/elenarjonap
++ Paloma    https://github.com/birdsinyourgarden
++ Sierri    https://github.com/sierriconvoz
++ Paula     https://github.com/pagudelo884
 
 ## Run test:
 To run the tests open terminal and enter the command 
