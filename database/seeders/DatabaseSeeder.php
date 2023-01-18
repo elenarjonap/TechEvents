@@ -8,8 +8,7 @@ use Illuminate\Database\Seeder;
 use App\Models\User;
 
 class DatabaseSeeder extends Seeder
-{
-    
+{  
     public function run()
     {
         Adoption::factory()->create([
@@ -35,7 +34,6 @@ class DatabaseSeeder extends Seeder
             'img' => 'https://res.cloudinary.com/dog5ljnve/image/upload/v1673608773/LasNotas/ninfa_ji7ma6.png',
             'datetime' => '2023-02-22 19:00:00',
         ]);
-
         Adoption::factory()->create([
             'name' => 'Manila',
             'description' => 'Gata, 3 meses. Manila es una gata muy cariñosa y especial, es independiente de los demás gatos del refugio pero con las personas es muy mimosa. Ella fue rescatada de una colonia callejera y desde entonces vive en nuestro refugio. Es una gata adorable y su pelito es como de algodón, corto y denso.',
@@ -43,7 +41,6 @@ class DatabaseSeeder extends Seeder
             'img' => 'https://res.cloudinary.com/dog5ljnve/image/upload/v1673608424/LasNotas/gato_1.png',
             'datetime' => '2023-03-15 12:30:00',
         ]);
-
         Adoption::factory()->create([
             'name' => 'Turquino',
             'description' => 'Siendo apenas un cachorro, Turquino fue encadenado. Todavía tenía que crecer, pero nadie tuvo eso en cuenta, y nunca le quitaron esa cadena. Con el tiempo, su cuello se hizo más grande y dado que la cadena no podía ceder, se le fue incrustando poco a poco. Le liberamos de esa cadena y ya sus heridas fueron sanando. Él quiere correr y jugar. Siempre había anhelado libertad y cariño. Turquino ya está genial, enérgico y juguetón.',
@@ -51,7 +48,6 @@ class DatabaseSeeder extends Seeder
             'img' => 'https://res.cloudinary.com/dog5ljnve/image/upload/v1673604210/LasNotas/firulais.png',
             'datetime' => '2023-03-16 17:45:00',
         ]);
-
         Adoption::factory()->create([
             'name' => 'Las Pepas',
             'description' => 'Damos en adopción esta familia de ratitas porque necesitan vivir en compañía de su propia especie. Sólo se pueden acoger hermanitos/as del mismo sexo, para evitar que se reproduzcan. Cariñosas y divertidas.',
@@ -59,7 +55,6 @@ class DatabaseSeeder extends Seeder
             'img' => 'https://res.cloudinary.com/dog5ljnve/image/upload/v1673609122/LasNotas/ratas_ymwvwo.png',
             'datetime' => '2023-03-16 19:45:00',
         ]);
-
         Adoption::factory()->create([
             'name' => 'Pumi',
             'description' => 'Conejo de 1 año. Pumi es un conejito que lo tuvo una familia desde pequeño. Al hacerse mayor vieron que era demasiado trabajo para ellos la limpieza del patio y lo metieron en una jaula. Al tiempo les dio pena y decidieron darlo a otra persona que tuviera más tiempo y sensibilidad para estar con él. ¿Eres Tú? Por cierto, Pumi le encanta el calor y si lo subes a tu regazo se quedará dormido.',
@@ -67,7 +62,6 @@ class DatabaseSeeder extends Seeder
             'img' => 'https://res.cloudinary.com/dog5ljnve/image/upload/v1673607054/LasNotas/conejo_1_xcghm2.png',
             'datetime' => '2023-03-20 18:25:00',
         ]);
-
         Adoption::factory()->create([
             'name' => 'Flora',
             'description' => 'Gallina de 6 meses. Flora tuvo un altercado con un perro y tiene un ala rota. Necesita estar en compañía con otras gallinas. Esta acostumbrada a las personas y le gusta seguirte cuando llega la hora de la comida, también le gusta que le acaricies el cuello. Pone unos huevos exquisitos.',
@@ -75,7 +69,6 @@ class DatabaseSeeder extends Seeder
             'img' => 'https://res.cloudinary.com/dog5ljnve/image/upload/v1673608110/LasNotas/gallina_f4w33l.png',
             'datetime' => '2023-03-21 17:00:00',
         ]);
-
         Adoption::factory()->create([
             'name' => 'Amis',
             'description' => 'Coballa de 5 meses. Amis es hijo de Star. Tuvo la suerte de nacer en una de nuestras casas de acogida y no en el polígono donde recogimos a la madre y donde posiblemente no hubiese sobrevivido.
@@ -84,7 +77,6 @@ class DatabaseSeeder extends Seeder
             'img' => 'https://res.cloudinary.com/dog5ljnve/image/upload/v1673871169/LasNotas/cobaya_jw9fdf.png',
             'datetime' => '2023-03-24 16:00:00',
         ]);
-
         Adoption::factory()->create([
             'name' => 'Mónica',
             'description' => 'Vaca de 6 meses. Mónica fue rescata de una terrible situación de maltrato.
@@ -92,9 +84,7 @@ class DatabaseSeeder extends Seeder
             'spaces' => '20',
             'img' => 'https://res.cloudinary.com/dog5ljnve/image/upload/v1673876610/LasNotas/vaqui_slqzku.png',
             'datetime' => '2023-03-24 17:00:00',
-        ]);
-
-        
+        ]);        
         Adoption::factory()->create([
             'name' => 'Coti y Kote',
             'description' => 'Cotorras argentinas de 3 años. Coti y Kote son dos Cotorras Argentinas. Cuando llega la poda de las palmeras cantidades inmensas de nidos caen y estas aves fallecen en el proceso, Estos dos han sido recogidos por unas amigas y son papilleras alimentadas por la asociación. Al ser papilleras tendrán afinidad con las personas que los adopten.',
@@ -102,7 +92,6 @@ class DatabaseSeeder extends Seeder
             'img' => 'https://res.cloudinary.com/dog5ljnve/image/upload/v1673872033/LasNotas/cotorras.png',
             'datetime' => '2023-03-25 19:45:00',
         ]);
-
         Adoption::factory()->create([
             'name' => 'Galleta',
             'description' => 'Cabra de 4 meses. La encontraron con pocos días de vida sola y la han estado cuidando con mucho amor hasta que ha podido venir con nosotras, Está deseando encontrar una súper familia de cabras y personas!',
@@ -110,8 +99,6 @@ class DatabaseSeeder extends Seeder
             'img' => 'https://res.cloudinary.com/dog5ljnve/image/upload/v1673877853/LasNotas/cabri_yao01b.png',
             'datetime' => '2023-03-26 17:00:00',
         ]);
-
-
         Adoption::factory()->create([
             'name' => 'Coti y Kote2',
             'description' => 'Cotorras argentinas de 1 mes. Coti y Kote son dos Cotorras Argentinas. Cuando llega la poda de las palmeras cantidades inmensas de nidos caen y estas aves fallecen en el proceso, Estos dos han sido recogidos por unas amigas y son papilleras alimentadas por la Asociación. Al ser papilleras tendrán afinidad con las personas que los adopten.',

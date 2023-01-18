@@ -16,7 +16,6 @@ class AdoptionController extends Controller
      */
     public function index()
     {
-        //
         $adoptions = Adoption::orderBy('datetime', 'asc')->paginate(6);
         return view('home', compact('adoptions'));       
     }
@@ -52,7 +51,6 @@ class AdoptionController extends Controller
      */
     public function show($id)
     {
-        //
         $adoption = Adoption::find($id);
         return view ('showAdoption', compact('adoption'));
     }
@@ -65,7 +63,6 @@ class AdoptionController extends Controller
      */
     public function edit($id)
     {
-        //
         $adoption = Adoption::find($id);
         return view ('editAdoption', compact('adoption'));
     }
@@ -79,7 +76,6 @@ class AdoptionController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
         $adoption = request()->except('_token', '_method');
         Adoption::where('id', '=', $id)->update($adoption);
         return redirect()->route('home');
@@ -101,9 +97,7 @@ class AdoptionController extends Controller
     {
         $adoption = Adoption::find($id);
         $user = User::find(Auth::id());
-
-        $user->adoption()->attach($adoption);  
-        
+        $user->adoption()->attach($adoption);          
         return redirect()->route('home');
     }
 
@@ -111,11 +105,7 @@ class AdoptionController extends Controller
     {
         $adoption = Adoption::find($id);
         $user = User::find(Auth::id());
-
-        $user->adoption()->detach($adoption);  
-        
+        $user->adoption()->detach($adoption);          
         return redirect()->route('home');
-    }  
-    
-    
+    }      
 }

@@ -8,17 +8,16 @@ use Illuminate\Database\Eloquent\Model;
 class Adoption extends Model
 {
     use HasFactory;
+    
     protected $fillable = [
         'name',
         'description',
         'spaces',
         'img',
         'datetime',
-        'ifAdopted',
     ];
 
     public function user(){
         return $this->belongsToMany(User::class);
     }
-
 }
