@@ -41,7 +41,7 @@ To run the tests open terminal and enter the command
   + php artisan test
   + vendor/bin/phpunit tests
 ```
-<img width="150" alt="Screenshot_1" src="https://user-images.githubusercontent.com/90152938/213181668-8b9c2934-aa8e-4e77-a92d-553ba76ae5af.png">
+<img width="450" alt="Screenshot_1" src="https://user-images.githubusercontent.com/90152938/213181668-8b9c2934-aa8e-4e77-a92d-553ba76ae5af.png">
 
 
 ## Methodology:
