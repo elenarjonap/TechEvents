@@ -1,7 +1,7 @@
 # Tech Events Manager
 ***
 ## Project name: 
-<img src="https://user-images.githubusercontent.com/90152938/213161401-683faaae-6a24-4d7d-9343-0f73230dc7c0.png"> <h1>Las notas - Abrazanos</h1>
+<h1> <img src="https://user-images.githubusercontent.com/90152938/213161401-683faaae-6a24-4d7d-9343-0f73230dc7c0.png"> Las notas - Abrazanos</h1>
 
 ***
 ## Project description:
