@@ -17,17 +17,7 @@ class AdoptionController extends Controller
     public function index()
     {
         //
-        $adoptions = Adoption::Paginate(6);
-        //como usuario logguedo hazme un array con las adopciones inscritas.
-        //Hazme un doble foreach. Primer foreach todas las adopciones y el segundo foreach en el que estoy inscrito
-        // ifAdoption is true. Si es true ponme un boton y si no otro botón. Crear dos botones iguales
-        // esconder con if el botón
-
-        /* $adoptionsold
-        $adoptionsnew
-        $adoptionsinscribe */
-        //var_dump($adoptions);
-        /* return view('home', compact('adoptions', 'adoptionsold', 'adoptionsnew')); */
+        $adoptions = Adoption::orderBy('datetime', 'asc')->paginate(6);
         return view('home', compact('adoptions'));       
     }
 
