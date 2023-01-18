@@ -29,6 +29,18 @@ Why hug us? Because adopting is a 100% bilateral relationship between two specie
 | Admin | User |
 | :--- | :---: |
 |<img src="https://user-images.githubusercontent.com/90152938/213163851-d5d95763-0b8a-4045-b2cb-da8a0ae51594.png">|<img src="https://user-images.githubusercontent.com/90152938/213164228-1a7ec88a-663a-4785-9245-f06795eff2e1.png">|
+
+
+
+
+
+<div style="heigth:auto; display:flex; flex-wrap:wrap; justify-content:center; padding:1rem">
+
+| Home view Admin | Show view Admin | Create view Admin| Edit view Admin |
+| --- | --- | --- | --- | --- |
+| <img style="width:150px;" src="https://user-images.githubusercontent.com/98114939/210433972-aea85b9d-5f19-4af2-96bd-72ec35a681ea.png" alt="Home view"/> | <img style="width:150px;" src="https://user-images.githubusercontent.com/98114939/210434007-f0b7288b-e031-472a-8cd2-6970ef1cc6d5.png" alt="Show view"/> | <img style="width:150px;" src="https://user-images.githubusercontent.com/98114939/210436616-e26a4ff3-1b9a-4caa-98d1-c6f48d1fcb68.png" alt="Home view"/> | <img style="width:150px;" src="https://user-images.githubusercontent.com/98114939/210436641-37b45b15-5685-4f98-b051-ed40e0f3780d.png" alt="Show view"/> | <img style="width:75px;" src="https://user-images.githubusercontent.com/98114939/211341367-187230a2-f308-4399-850c-82a564ad443e.png" alt="Create view"/> |
+
+</div>
 ## Stacks:
 | Stacks |
 | :--- |
