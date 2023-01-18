@@ -51,6 +51,12 @@ To run the tests open terminal and enter the command
 
 
 ## Next Steps :
+<li>Add limit of participants to the adoption process</li>
+<li>Create external email</li>
+<li>Block access to past adoption processes</li>
+<li>Add new views</li>
+<li>Organization of views in Laravel</li>
+<li>Creation of a selectable Slider</li>
 
 
 
