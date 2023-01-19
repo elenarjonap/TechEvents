@@ -42,16 +42,12 @@ git clone
 https://github.com/elenarjonap/TechEvents
 ```
 
-2. Go to the project directory
-```bash
-      cd Abrazarnos
-```
 
-3. Create a MySQL database called "Abrazarnos"
+2. Create a MySQL database called "Abrazarnos"
 
-4. Create an .env file in the text editor copying the content of .env.example and modify the name of the database (laravel by Embrace us)
+3. Create an .env file in the text editor copying the content of .env.example and modify the name of the database (laravel by Embrace us)
 
-5. Install dependencies
+4. Install dependencies
 ```bash
       install npm
 ```
@@ -59,17 +55,17 @@ https://github.com/elenarjonap/TechEvents
       composer installation
 ```
 
-6. Activate the server and keep this terminal open
+5. Activate the server and keep this terminal open
 ```bash
       npm run dev
 ```
 
-7. Run the PHP server and keep this terminal open
+6. Run the PHP server and keep this terminal open
 ```bash
       php craft service
 ```
 
-8. Import database
+7. Import database
 ```bash
       php artisan migrate:fresh --seed
 
