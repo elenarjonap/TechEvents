@@ -63,11 +63,11 @@ https://github.com/elenarjonap/TechEvents
 6. Import database
 ```bash
       php artisan migrate:fresh --seed
-
-6. Open php server
+```
+7. Open php server
 ```bash
       php artisan serve
-      
+```   
 
 ## Run test:
 To run the tests open terminal and enter the command 
