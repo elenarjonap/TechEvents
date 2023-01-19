@@ -38,8 +38,7 @@ Why hug us? Because adopting is a 100% bilateral relationship between two specie
 
 1. Clone the project
 ```bash
-git clone
-https://github.com/elenarjonap/TechEvents
+git clone https://github.com/elenarjonap/TechEvents
 ```
 
 
