@@ -34,6 +34,45 @@ Why hug us? Because adopting is a 100% bilateral relationship between two specie
 + Sierri    https://github.com/sierriconvoz
 + Paula     https://github.com/pagudelo884
 
+## How to install this project
+
+1. Clone the project
+```bash
+      clone
+https://github.com/elenarjonap/TechEvents
+```
+
+2. Go to the project directory
+```bash
+      cd hug us
+```
+
+3. Create a MySQL database called "Hug us"
+
+4. Create an .env file in the text editor copying the content of .env.example and modify the name of the database (laravel by Embrace us)
+
+5. Install dependencies
+```bash
+      install npm
+```
+```bash
+      composer installation
+```
+
+6. Activate the server and keep this terminal open
+```bash
+      npm run dev
+```
+
+7. Run the PHP server and keep this terminal open
+```bash
+      php craft service
+```
+
+8. Import database
+```bash
+      php artisan migrate:fresh --seed
+
 ## Run test:
 To run the tests open terminal and enter the command 
 ```bash
