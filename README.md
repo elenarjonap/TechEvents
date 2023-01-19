@@ -38,16 +38,16 @@ Why hug us? Because adopting is a 100% bilateral relationship between two specie
 
 1. Clone the project
 ```bash
-      clone
+git clone
 https://github.com/elenarjonap/TechEvents
 ```
 
 2. Go to the project directory
 ```bash
-      cd hug us
+      cd Abrazarnos
 ```
 
-3. Create a MySQL database called "Hug us"
+3. Create a MySQL database called "Abrazarnos"
 
 4. Create an .env file in the text editor copying the content of .env.example and modify the name of the database (laravel by Embrace us)
 
