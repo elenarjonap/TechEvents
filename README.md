@@ -45,14 +45,14 @@ https://github.com/elenarjonap/TechEvents
 
 2. Create a MySQL database called "Abrazarnos"
 
-3. Create an .env file in the text editor copying the content of .env.example and modify the name of the database (laravel by Embrace us)
+3. Create an .env file in the text editor copying the content of .env.example and modify the name of the database (laravel by Abrazarnos")
 
 4. Install dependencies
 ```bash
       install npm
 ```
 ```bash
-      composer installation
+      composer install
 ```
 
 5. Activate the server and keep this terminal open
@@ -60,14 +60,14 @@ https://github.com/elenarjonap/TechEvents
       npm run dev
 ```
 
-6. Run the PHP server and keep this terminal open
-```bash
-      php craft service
-```
-
-7. Import database
+6. Import database
 ```bash
       php artisan migrate:fresh --seed
+
+6. Open php server
+```bash
+      php artisan serve
+      
 
 ## Run test:
 To run the tests open terminal and enter the command 
